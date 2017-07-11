@@ -22,6 +22,11 @@ variable "provider_access" {
 variable "provider_secret" {
   description = ""
 }
-variable "aws_region" {
+variable "provider_region" {
   description = ""
+  default ="ap-southeast-1"
+}
+variable "managed_region" {
+  description = ""
+  default ="ap-southeast-1"
 }
