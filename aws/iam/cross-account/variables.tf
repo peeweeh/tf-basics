@@ -22,3 +22,6 @@ variable "provider_access" {
 variable "provider_secret" {
   description = ""
 }
+variable "aws_region" {
+  description = ""
+}
