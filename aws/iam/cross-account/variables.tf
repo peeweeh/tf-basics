@@ -30,3 +30,4 @@ variable "managed_region" {
   description = ""
   default ="ap-southeast-1"
 }
+variable "provider_account_id" {}

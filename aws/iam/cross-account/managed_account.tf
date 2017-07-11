@@ -28,7 +28,7 @@ resource "aws_iam_role" "external_admin_role" {
       "Sid": "",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::${var.main_account_id}:root"
+        "AWS": "arn:aws:iam::${var.provider_account_id}:root"
       },
       "Action": "sts:AssumeRole"
     }
