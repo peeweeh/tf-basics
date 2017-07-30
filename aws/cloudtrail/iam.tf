@@ -1,6 +1,6 @@
 // Create Cloudtrail IAM Role
 resource "aws_iam_role" "iam_role" {
-  name = "${var.aws_account}-cloudtrail"
+  name = "cloudtrail-${random_id.b.hex}-${random_pet.p.id}"
 
   assume_role_policy = <<EOF
 {
@@ -21,7 +21,7 @@ EOF
 
 // Create Cloudtrail IAM Role Policy
 resource "aws_iam_role_policy" "iam_role_policy" {
-  name = "${var.aws_account}-cloudtrail-policy"
+  name = "cloudtrail-policy-${random_id.b.hex}-${random_pet.p.id}"
   role = "${aws_iam_role.iam_role.id}"
 
   policy = <<EOF

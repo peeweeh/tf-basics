@@ -1,6 +1,6 @@
 // Create Cloudtrail S3 Bucket Policy
 resource "aws_s3_bucket_policy" "cloudtrail_s3_bucket_policy" {
-  bucket = "${var.aws_account}"
+  bucket = "cloudtrail-${random_id.b.hex}-${random_pet.p.id}"
 
   policy = <<POLICY
 {
