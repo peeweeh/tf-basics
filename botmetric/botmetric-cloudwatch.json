@@ -1,0 +1,34 @@
+{
+      "Version": "2012-10-17",
+      "Statement": [
+            {
+                  "Effect": "Allow",
+                  "Action": [
+                        "sns:ConfirmSubscription",
+                        "sns:Create*",
+                        "sns:DeleteTopic",
+                        "sns:Get*",
+                        "sns:List*",
+                        "sns:Set*",
+                        "sns:Subscribe",
+                        "sns:Unsubscribe"
+                  ],
+                  "Resource": [
+                        "*"
+                  ]
+            },
+            {
+                  "Effect": "Allow",
+                  "Action": [
+                        "cloudwatch:Describe*",
+                        "cloudwatch:Enable*",
+                        "cloudwatch:Get*",
+                        "cloudwatch:List*",
+                        "cloudwatch:Put*"
+                  ],
+                  "Resource": [
+                        "*"
+                  ]
+            }
+      ]
+}
